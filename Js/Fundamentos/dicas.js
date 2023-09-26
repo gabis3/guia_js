@@ -94,11 +94,11 @@
 
 // /* - - - - - - - - - - - - Template String- - - - - - - - - - - - - */
 
-const nome = "Augusto";
-const concatenacao = "Olá " + nome + "!";
-const template = `
-    Olá 
-${nome}!`
+// const nome = "Augusto";
+// const concatenacao = "Olá " + nome + "!";
+// const template = `
+//     Olá 
+// ${nome}!`
 
 
-console.log(concatenacao, template, "\n");
+// console.log(concatenacao, template, "\n");
