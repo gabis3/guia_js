@@ -108,32 +108,54 @@
 // const up = texto => texto.toUpperCase(); //funçãopega o parametro e transforma em letra maiuscula
 // console.log(`Ei... ${up("cuidado")}!`); 
 
-/* - - - - - - - - - - - - Boolean- - - - - - - - - - - - - */
-//js aceita varios tipos de verdadeiro e falso
+// /* - - - - - - - - - - - - Boolean- - - - - - - - - - - - - */
+// //js aceita varios tipos de verdadeiro e falso
 
-let isAtivo = false;
-console.log(isAtivo); //esta imprimindo o literal true ou false
-isAtivo = true;
-console.log(isAtivo, "\n");
+// let isAtivo = false;
+// console.log(isAtivo); //esta imprimindo o literal true ou false
+// isAtivo = true;
+// console.log(isAtivo, "\n");
 
-isAtivo = 1;
-console.log(!!isAtivo); //exclamação significa negativo - duas ! retorna o valor booleano original
-console.log(!isAtivo, "\n");
+// isAtivo = 1;
+// console.log(!!isAtivo); //exclamação significa negativo - duas ! retorna o valor booleano original
+// console.log(!isAtivo, "\n");
 
-console.log("os verdadeiros...");
-console.log(!!24);
-console.log(!!-7);
-console.log(!!" ");
-console.log(!!"oi");
-console.log(!![]);
-console.log(!!{});
-console.log(!!Infinity);
-console.log(!!(isAtivo = Infinity));
+// console.log("os verdadeiros...");
+// console.log(!!24);
+// console.log(!!-7);
+// console.log(!!" ");
+// console.log(!!"oi");
+// console.log(!![]);
+// console.log(!!{});
+// console.log(!!Infinity);
+// console.log(!!(isAtivo = Infinity));
 
-console.log("\nos falsos...");
-console.log(!!0);
-console.log(!!"");
-console.log(!!null);
-console.log(!!NaN);
-console.log(!!undefined);
-console.log(!!(isAtivo = 0));
+// console.log("\nos falsos...");
+// console.log(!!0);
+// console.log(!!"");
+// console.log(!!null);
+// console.log(!!NaN);
+// console.log(!!undefined);
+// console.log(!!(isAtivo = 0));
+
+// console.log("\npara finalizar... ");
+// console.log(!!("" || null || 0 || " ")); // || significa "ou" // se algum for verdadeiro o retorno será true
+// console.log(("" || NaN || "omelete")); //sempre retorna o primeiro valor verdadeiro
+// console.log(("" || "Pandora" || "omelete"));
+// console.log(("" || NaN || "omelete \n"));
+
+// let nome = "";
+// console.log(nome || "Informe o nome por favor!");
+// nome = "Augusto"
+// console.log(nome || "Informe o nome por favor!");
+
+/* - - - - - - - - - - - - Array- - - - - - - - - - - - - */
+
+const valores = [7, 27, 2, 45];
+console.log(valores[0], valores[3]); // , = e
+console.log(valores[4], "\n");
+
+valores[4] = 10; //adicionando uma posição no array
+console.log(valores, valores.length);
+valores[7] = 1; 
+console.log(valores, valores.length);
