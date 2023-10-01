@@ -159,3 +159,4 @@ valores[4] = 10; //adicionando uma posição no array
 console.log(valores, valores.length);
 valores[7] = 1; 
 console.log(valores, valores.length);
+
