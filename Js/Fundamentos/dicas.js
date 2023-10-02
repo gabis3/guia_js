@@ -149,14 +149,23 @@
 // nome = "Augusto"
 // console.log(nome || "Informe o nome por favor!");
 
+// /* - - - - - - - - - - - - Array- - - - - - - - - - - - - */
+
+// const valores = [7, 27, 2, 45];
+// console.log(valores[0], valores[3]); // , = e
+// console.log(valores[4], "\n");
+
+// valores[4] = 10; //adicionando uma posição no array
+// valores[7] = 1; 
+// console.log(valores, valores.length, "\n");
+
+// valores.push({id: 3}, false, null, "amor"); //adiciona valores no final do array
+// console.log(valores, "\n");
+
+// console.log(valores.pop()); //deleta o ultimo item do array e imprime ele
+// delete valores[7]; //deleta o vetor escolhido e deixa um espaço vazio (tira um atributo de dentro de um obsejo)
+// console.log(valores);
+ 
+// console.log(typeof valores);
+
 /* - - - - - - - - - - - - Array- - - - - - - - - - - - - */
-
-const valores = [7, 27, 2, 45];
-console.log(valores[0], valores[3]); // , = e
-console.log(valores[4], "\n");
-
-valores[4] = 10; //adicionando uma posição no array
-console.log(valores, valores.length);
-valores[7] = 1; 
-console.log(valores, valores.length);
-
