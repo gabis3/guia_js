@@ -168,4 +168,29 @@
  
 // console.log(typeof valores);
 
-/* - - - - - - - - - - - - Array- - - - - - - - - - - - - */
+// /* - - - - - - - - - - - - Object- - - - - - - - - - - - - */
+// //jason: javaScript object notetion
+
+// const prod1 = {}; //{} forma literal de escrever um objeto
+// //atribuindo propriedades de forma dinamica
+// prod1.nome = "Algusto Barcelos Bastos";
+// prod1.preco = 4227.11;
+// prod1["Desconto Legal"] = 0.40; // evitar usar atributos com espaço
+
+// console.log(prod1, "\n");
+
+// //notação literal de objeto
+// const prod2 = {
+//     nome: "Camisa Polo",
+//     preco: 42.00,
+//     obj: {
+//         aaaa: 1,
+//         obj: {
+//             aaaa: 2
+//         }
+//     }
+// }
+
+// console.log(prod2);
+
+/* - - - - - - - - - - - - Null e Undefined- - - - - - - - - - - - - */
