@@ -194,3 +194,21 @@
 // console.log(prod2);
 
 /* - - - - - - - - - - - - Null e Undefined- - - - - - - - - - - - - */
+//atribuição por valor e atribuição por referencia
+
+const a = {name: "Teste"};
+console.log("a: ", a);
+
+const b = a;
+console.log("b: ", b, "\n");
+//a constante possui o endereço que está apontando para um lugar na memória
+
+b.name = "Opa";
+console.log("b: ", b);
+console.log("a: ", a, "\n"); //os dois estão com o endereço igualado - se um muda o outro tbm
+
+let c = 3;
+let d = c;
+d++
+console.log("d: ", d);
+console.log("c: ", c, "\n"); //valor primitivo é feita uma cópia do valor
