@@ -211,4 +211,25 @@ let c = 3;
 let d = c;
 d++
 console.log("d: ", d);
-console.log("c: ", c, "\n"); //valor primitivo é feita uma cópia do valor
+console.log("c: ", c, "\n \n"); //valor primitivo é feita uma cópia do valor
+
+
+let valor; //não inicializada - por padrão undefined
+console.log(valor);
+
+valor = null; //quando quisar zerar uma variavel coloca null
+console.log(valor, "\n");
+// console.log(valor.toString()); //erro
+
+const produto = {};
+console.log(produto);
+console.log(produto.preco);
+
+produto.preco = 4.20;
+console.log(produto, "\n");
+
+produto.preco = undefined;
+console.log(!!produto.preco);
+console.log(produto);
+delete produto.preco;
+console.log(produto);
