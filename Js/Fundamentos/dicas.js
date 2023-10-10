@@ -193,43 +193,50 @@
 
 // console.log(prod2);
 
-/* - - - - - - - - - - - - Null e Undefined- - - - - - - - - - - - - */
-//atribuição por valor e atribuição por referencia
+// /* - - - - - - - - - - - - Null e Undefined- - - - - - - - - - - - - */
+// //atribuição por valor e atribuição por referencia
 
-const a = {name: "Teste"};
-console.log("a: ", a);
+// const a = {name: "Teste"};
+// console.log("a: ", a);
 
-const b = a;
-console.log("b: ", b, "\n");
-//a constante possui o endereço que está apontando para um lugar na memória
+// const b = a;
+// console.log("b: ", b, "\n");
+// //a constante possui o endereço que está apontando para um lugar na memória
 
-b.name = "Opa";
-console.log("b: ", b);
-console.log("a: ", a, "\n"); //os dois estão com o endereço igualado - se um muda o outro tbm
+// b.name = "Opa";
+// console.log("b: ", b);
+// console.log("a: ", a, "\n"); //os dois estão com o endereço igualado - se um muda o outro tbm
 
-let c = 3;
-let d = c;
-d++
-console.log("d: ", d);
-console.log("c: ", c, "\n \n"); //valor primitivo é feita uma cópia do valor
+// let c = 3;
+// let d = c;
+// d++
+// console.log("d: ", d);
+// console.log("c: ", c, "\n \n"); //valor primitivo é feita uma cópia do valor
 
 
-let valor; //não inicializada - por padrão undefined
-console.log(valor);
+// let valor; //não inicializada - por padrão undefined
+// console.log(valor);
 
-valor = null; //quando quisar zerar uma variavel coloca null
-console.log(valor, "\n");
-// console.log(valor.toString()); //erro
+// valor = null; //quando quisar zerar uma variavel coloca null
+// console.log(valor, "\n");
+// // console.log(valor.toString()); //erro
 
-const produto = {};
-console.log(produto);
-console.log(produto.preco);
+// const produto = {};
+// console.log(produto);
+// console.log(produto.preco);
 
-produto.preco = 4.20;
-console.log(produto, "\n");
+// produto.preco = 4.20;
+// console.log(produto, "\n");
 
-produto.preco = undefined;
-console.log(!!produto.preco);
-console.log(produto);
-delete produto.preco;
-console.log(produto);
+// produto.preco = undefined;
+// console.log(!!produto.preco);
+// console.log(produto);
+// delete produto.preco;
+// console.log(produto);
+
+/* - - - - - - - - - - - - Funçaõ- - - - - - - - - - - - - */
+
+console.log(typeof Object);
+
+class Produto {};
+console.log(typeof Produto);
