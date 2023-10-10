@@ -11,6 +11,7 @@
 // b = 50;
 // console.log("alterado " + a, b, "\n");
 
+
 // /* - - - - - - - - - - - - tipagem fraca - - - - - - - - - - - - - */
 
 // let aaa = "texto qualquer";
@@ -25,6 +26,7 @@
 
 // console.log(7 / 0); 
 // console.log("10" / 2, "\n");
+
 
 // /* - - - - - - - - - - - - Tipos Numeros- - - - - - - - - - - - - */
 
@@ -45,6 +47,7 @@
 // console.log(media.toString(2)); //pega o valor original da constante - 2 retorna binary 10 decimal 16 hexadecimal
 // console.log(typeof media, "\n");
 
+
 // /* - - - - - - - - - - - - alguns cuidados- - - - - - - - - - - - - */
 
 // console.log("10,2" / 2);
@@ -58,6 +61,7 @@
 // ////console.log(10.toString()); //não dá para chamar um literal ponto a função
 // console.log((10).toString(), "\n"); //mas se colocar parenteses funciona
 
+
 // /* - - - - - - - - - - - - Math- - - - - - - - - - - - - */
 // //Math é um objeto para matematica basica
 
@@ -65,6 +69,7 @@
 // let area = Math.PI * Math.pow(raio, 2);  //pow - potenciação primeiro elevado ao segundo
 
 // console.log(area, "\n");
+
 
 // /* - - - - - - - - - - - - String- - - - - - - - - - - - - */
 // // 'normal'  "normal"  `template`
@@ -92,6 +97,7 @@
 
 // console.log("Gabriella, Augusto, Pato".split(",")); //split separa e transforma em array
 
+
 // /* - - - - - - - - - - - - Template String- - - - - - - - - - - - - */
 
 // const nome = "Augusto";
@@ -107,6 +113,7 @@
  
 // const up = texto => texto.toUpperCase(); //funçãopega o parametro e transforma em letra maiuscula
 // console.log(`Ei... ${up("cuidado")}!`); 
+
 
 // /* - - - - - - - - - - - - Boolean- - - - - - - - - - - - - */
 // //js aceita varios tipos de verdadeiro e falso
@@ -149,6 +156,7 @@
 // nome = "Augusto"
 // console.log(nome || "Informe o nome por favor!");
 
+
 // /* - - - - - - - - - - - - Array- - - - - - - - - - - - - */
 
 // const valores = [7, 27, 2, 45];
@@ -167,6 +175,7 @@
 // console.log(valores);
  
 // console.log(typeof valores);
+
 
 // /* - - - - - - - - - - - - Object- - - - - - - - - - - - - */
 // //jason: javaScript object notetion
@@ -192,6 +201,7 @@
 // }
 
 // console.log(prod2);
+
 
 // /* - - - - - - - - - - - - Null e Undefined- - - - - - - - - - - - - */
 // //atribuição por valor e atribuição por referencia
@@ -234,9 +244,80 @@
 // delete produto.preco;
 // console.log(produto);
 
-/* - - - - - - - - - - - - Funçaõ- - - - - - - - - - - - - */
 
-console.log(typeof Object);
+// /* - - - - - - - - - - - - Funçaõ- - - - - - - - - - - - - */
+// //função pe um bloco de código, com alguma sentenca ou n, nomeado onde vc pode chamar varias vezes e utiliza-lo no seu código
+// console.log(typeof Object);
 
-class Produto {};
-console.log(typeof Produto);
+// class Produto {};
+// console.log(typeof Produto, "\n");
+
+// //função sem retorno - escolher bons nomes para as funções - colocar os nomes dos parametros
+// function imprimirSoma(a, g){
+//     console.log(a + g);
+// }
+
+// imprimirSoma(2, 4);
+// imprimirSoma();
+// imprimirSoma(2);
+// imprimirSoma(2, 4, 7, 9);
+// const guto = "Guto e "
+// imprimirSoma(guto, "Gabs")
+// console.log("\n");
+
+// //função com retorno
+// function soma(a, g = 1){
+//     return a + g;
+// }
+
+// console.log(soma(2, 7));
+// console.log(soma(2), "\n");
+
+
+// //armazenando uma função em uma variavel
+// const imprimirSoma2 = function (a, g){ //função anonima pq ela n tem o nome declarado
+//     console.log(a + g);
+// }
+// imprimirSoma2(2, 4);
+
+// //armazenando uma função arrow em uma variavel
+// const soma2 = (guto, gabs) => {
+//     return guto + gabs;
+// }
+// console.log(soma2(2, 7));
+
+// //retorno implícito
+// const subtracao = (a, b) => a - b;
+// console.log(subtracao(2, 3), "\n");
+
+// const teamo = g => g + " TE AMO!";
+// console.log(teamo("eu"));
+// const teamo2 = g => console.log(g);
+// teamo2("eu te amo!")
+
+
+/* - - - - - - - - - - - - variavel com Var - - - - - - - - - - - - */
+// o var pode ser visto fora do seu bloco (mas na do bloco de uma função) outras variaveis n fazem isso
+{
+    {
+        {
+            {
+                var sera = "Será??????";
+                console.log(sera);
+            }
+            let talvez = "talvez";
+            console.log(talvez);
+        }
+        console.log(sera);
+    }
+}
+console.log(sera, "\n");
+//console.log(talvez);  - DA UM ERRO
+
+function teste() {
+    var local = 123
+    console.log(local);
+}
+
+teste();
+//console.log(local); - da um erro
