@@ -2,8 +2,8 @@
 
 // /* - - - - - - - - - - - -  - - - - - - - - - - - - - */
 
-// var a = 3; //int a = 3;
-// let b = 4; //mais moderno (let n pode redeclarar dentro dela)
+// var a = 3; //int a = 3; - escopo de função e global
+// let b = 4; //mais moderno (let n pode redeclarar dentro dela) -escopo de bloco, função e global
 // const c = 5; //não permite mudar o valor
 // console.log(a, b, c, "\n")
 
@@ -296,28 +296,91 @@
 // teamo2("eu te amo!")
 
 
-/* - - - - - - - - - - - - variavel com Var - - - - - - - - - - - - */
-// o var pode ser visto fora do seu bloco (mas na do bloco de uma função) outras variaveis n fazem isso
-{
-    {
-        {
-            {
-                var sera = "Será??????";
-                console.log(sera);
-            }
-            let talvez = "talvez";
-            console.log(talvez);
-        }
-        console.log(sera);
-    }
-}
-console.log(sera, "\n");
-//console.log(talvez);  - DA UM ERRO
+// /* - - - - - - - - - - - - variavel com Var - - - - - - - - - - - - */
+// // o var pode ser visto fora do seu bloco (mas na do bloco de uma função) outras variaveis n fazem isso
+// {
+//     {
+//         {
+//             {
+//                 var sera = "Será??????";
+//                 console.log(sera);
+//             }
+//             let talvez = "talvez";
+//             console.log(talvez);
+//         }
+//         console.log(sera);
+//     }
+// }
+// console.log(sera, "\n");
+// //console.log(talvez);  - DA UM ERRO
 
-function teste() {
-    var local = 123
-    console.log(local);
-}
+// function teste() {
+//     var local = 123
+//     console.log(local);
+// }
 
-teste();
-//console.log(local); - da um erro
+// teste();
+// //console.log(local); - da um erro
+
+// var num = 1;
+// {
+//     var num = 2;
+//     console.log("\ndentro =", num);
+// }
+// console.log("fora =", num);
+
+
+// /* - - - - - - - - - - - - variavel com Let - - - - - - - - - - - - */
+
+// let num = 1;
+// {
+//     let num = 2;
+//     console.log("\ndentro =", num);
+// }
+// console.log("fora =", num);
+
+
+// let numero = 1;
+// {
+//     let num2 = 2;
+//     console.log("\ndentro =", numero);
+// }
+// console.log("fora =", numero);
+
+
+// /* - - - - - - - - - - - - var e let em loop - - - - - - - - - - - - */
+
+// for (var i = 0; i < 10; i++) {
+//     console.log(i)
+// }
+// console.log('i = ', i, "\n");
+
+// const vetor = [];
+// for (var g = 0; g < 10; g++) {
+//     vetor.push(function() {
+//         console.log(g)
+//     })
+// }
+// vetor[2]()
+// vetor[8]()
+// console.log("\n");
+
+
+// for (let j = 0; j < 10; j++) {
+//     console.log(j);
+// }
+// //console.log("j =", j); // j is not defined
+// console.log("\n");
+
+// const funcs = [];
+// for (let a = 1; a < 10; a++) {
+//     funcs.push(function() {
+//         console.log(a)
+//     })
+// }
+// funcs[2]();
+// funcs[8]();
+
+
+/* - - - - - - - - - - - - hoisting - - - - - - - - - - - - */
+
