@@ -382,5 +382,113 @@
 // funcs[8]();
 
 
-/* - - - - - - - - - - - - hoisting - - - - - - - - - - - - */
+// /* - - - - - - - - - - - - hoisting - - - - - - - - - - - - */
+// //icamento da variavel
+
+// console.log("a = ", a);
+// var a = 2;
+// console.log("a =", a);
+
+// var b
+// console.log("\nb = ",b);
+// b = 2;
+// console.log("b =", b);
+
+
+// /* - - - - - - - - - - - - Par NomeValor - - - - - - - - - - - - */
+
+// const saudacao = "opa"; //contexto léxico 1 
+
+// function exec() {
+//     const saudacao = "oieee"; //contexto léxico 2
+//     return saudacao;
+// }
+
+// //objetos são grupos aninhados de pares nome/valor
+// const cliente = {
+//     nome: "Pedro",
+//     idade: 32,
+//     peso: 90,
+//     endereco: {
+//         logadouro: "Rua Muito Legal",
+//         numero: 123
+//     }
+// }
+
+// console.log(saudacao);
+// console.log(exec());
+// console.log(cliente);
+
+
+// /* - - - - - - - - - - - - Notação Ponto - - - - - - - - - - - - */
+
+// console.log(Math.ceil(2.7));
+
+// const obj = {}
+// obj.nome = "bola";
+// //obj["nome"] = "bola2"
+// console.log(obj.nome);
+
+// function Obj(nome){
+//     this.nome = nome;
+// }
+
+// const obj2 = new Obj("Cadeira");
+// console.log(obj2.nome);
+
+
+// /* - - - - - - - - - - - - Atribuição - - - - - - - - - - - - */
+
+// const a = 4;
+// let b = 2;
+
+// b += a //b = b + a
+// console.log(b);
+
+// b -= a //b = b - a
+// console.log(b);
+
+// b *= a //b = b * a
+// console.log(b);
+
+// b /= a //b = b / a
+// console.log(b);
+
+// b %= a //b = b % a
+// console.log(b);
+
+
+/* - - - - - - - - - - - - Operadores: destructuring - - - - - - - - - - - - */
+
+const pessoa = {
+    nome: "Ana",
+    idade: 5,
+    endereco: {
+        logadouro: "Rua Muito Legal",
+        numero: 123
+    }
+}
+
+const { nome, idade } = pessoa;
+console.log(nome, idade);
+
+const { nome: n, idade: i } = pessoa;
+console.log(n, i);
+
+const {sobrenome, guto = 2} = pessoa;
+console.log(sobrenome, guto);
+
+const {endereco: {logadouro, numero} } = pessoa;
+console.log(logadouro, "\n");
+
+
+const [a] = [10]
+console.log(a);
+
+const [n1, , n3, , n5, n6 = 0] = [10, 7, 9, 8]
+console.log(n1, n3, n5, n6);
+
+const [, [, nota]] = [[, 8, 8], [9, 6, 8]];
+console.log(nota, "\n");
+
 
