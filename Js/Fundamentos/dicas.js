@@ -439,7 +439,7 @@
 
 // /* - - - - - - - - - - - - Atribuição - - - - - - - - - - - - */
 
-// const a = 4;
+// let a = 4;
 // let b = 2;
 
 // b += a //b = b + a
@@ -453,6 +453,9 @@
 
 // b /= a //b = b / a
 // console.log(b);
+
+// a **= b //a = a ** b - Potenciação
+// console.log(a);
 
 // b %= a //b = b % a - pegar o que restou da divisão 
 // console.log(b);
@@ -563,5 +566,12 @@
 
 // console.log(++num1 === num2--);
 // console.log(num1 === num2);
+
+
+// /* - - - - - - - - - - - - Operadores: ternarios - - - - - - - - - - - - */
+
+// const resultado = nota => nota >= 7 ? "Aprovado" : "Reprovado"; //finção resumida
+// console.log(resultado(8));
+// console.log(resultado(5));
 
 
