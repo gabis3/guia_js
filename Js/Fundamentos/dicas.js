@@ -454,7 +454,7 @@
 // b /= a //b = b / a
 // console.log(b);
 
-// b %= a //b = b % a
+// b %= a //b = b % a - pegar o que restou da divisão 
 // console.log(b);
 
 
@@ -513,5 +513,26 @@
 // console.log(amor([50, 40]));
 // console.log(amor([992]));
 // console.log(amor([, 10]));
+
+
+// /* - - - - - - - - - - - - Operadores: relacionais - - - - - - - - - - - - */
+
+// console.log("01) ", "1" == 1);
+// console.log("02) ", "1" === 1);
+// console.log("03) ", "3" != 3);
+// console.log("04) ", "3" !== 3);
+
+// console.log("05) ", 3 < 2);
+// console.log("06) ", 3 > 2);
+// console.log("07) ", 3 <= 2);
+
+// const d1 = new Date(0);
+// const d2 = new Date(0);
+// console.log("08) ", d1 === d2); // vai comparar referencia de memoria 
+// console.log("09) ", d1.getTime() === d2.getTime());
+
+// console.log("10) ", undefined == null);
+// console.log("11) ", undefined === null);
+
 
 
