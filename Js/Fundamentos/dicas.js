@@ -575,3 +575,24 @@
 // console.log(resultado(5));
 
 
+// /* - - - - - - - - - - - - TESTES - - - - - - - - - - - - */
+// //global e o windows pro vccode 
+
+// let a = 3;
+// console.log(a);
+// console.log(global.a, "\n");
+
+// globalThis.b = 123;
+// console.log(b);
+// console.log(global.b, "\n");
+
+// this.c = 42;
+// this.d = false;
+// console.log(this.c);
+// console.log(module.exports.c);
+// console.log(module.exports === this);
+// console.log(module.exports, "\n");
+
+// abc = 3;
+// console.log(global.abc);
+
