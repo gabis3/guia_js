@@ -458,37 +458,60 @@
 // console.log(b);
 
 
-/* - - - - - - - - - - - - Operadores: destructuring - - - - - - - - - - - - */
+// /* - - - - - - - - - - - - Operadores: destructuring - - - - - - - - - - - - */
 
-const pessoa = {
-    nome: "Ana",
-    idade: 5,
-    endereco: {
-        logadouro: "Rua Muito Legal",
-        numero: 123
-    }
-}
+// const pessoa = {
+//     nome: "Ana",
+//     idade: 5,
+//     endereco: {
+//         logadouro: "Rua Muito Legal",
+//         numero: 123
+//     }
+// }
 
-const { nome, idade } = pessoa;
-console.log(nome, idade);
+// const { nome, idade } = pessoa;
+// console.log(nome, idade);
 
-const { nome: n, idade: i } = pessoa;
-console.log(n, i);
+// const { nome: n, idade: i } = pessoa;
+// console.log(n, i);
 
-const {sobrenome, guto = 2} = pessoa;
-console.log(sobrenome, guto);
+// const {sobrenome, guto = 2} = pessoa;
+// console.log(sobrenome, guto);
 
-const {endereco: {logadouro, numero} } = pessoa;
-console.log(logadouro, "\n");
+// const {endereco: {logadouro, numero} } = pessoa;
+// console.log(logadouro, "\n");
 
 
-const [a] = [10]
-console.log(a);
+// const [a] = [10]
+// console.log(a);
 
-const [n1, , n3, , n5, n6 = 0] = [10, 7, 9, 8]
-console.log(n1, n3, n5, n6);
+// const [n1, , n3, , n5, n6 = 0] = [10, 7, 9, 8]
+// console.log(n1, n3, n5, n6);
 
-const [, [, nota]] = [[, 8, 8], [9, 6, 8]];
-console.log(nota, "\n");
+// const [, [, nota]] = [[, 8, 8], [9, 6, 8]];
+// console.log(nota, "\n");
+
+
+// function rand({ min = 0, max = 1000}) {
+//     const valor = Math.random() * (max - min) + min;
+//     return Math.floor(valor);
+// }
+
+// const obj = {max: 50, min: 40};
+// console.log(rand(obj));
+// console.log(rand({min: 955}));
+// console.log(rand({}), "\n");
+// //console.log(rand()); - da um erro
+
+
+// function amor([min = 0, max = 1000]) {
+//     if (min > max) [min, max] = [max, min];
+//     const valor2 = Math.random() * (max - min) + min;
+//     return Math.floor(valor2);
+// }
+
+// console.log(amor([50, 40]));
+// console.log(amor([992]));
+// console.log(amor([, 10]));
 
 
