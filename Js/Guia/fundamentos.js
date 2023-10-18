@@ -596,3 +596,24 @@
 // abc = 3;
 // console.log(global.abc);
 
+
+// /* - - - - - - - - - - - - Tratamento de erros - - - - - - - - - - - - */
+
+// function tratarErroELancar(erro) {
+//     // throw new Error("...");
+//     // throw 10
+//     throw false
+// }
+
+// function imprimirNomeGritado(obj) {
+//     try {
+//         console.log(obj.name.toUpperCase() + "!!!");
+//     } catch (e) {
+//         tratarErroELancar(e);
+//     } finally {
+//         console.log("final");
+//     }
+// }
+
+// const obj = {nome: "Roberto"}
+// imprimirNomeGritado(obj);
