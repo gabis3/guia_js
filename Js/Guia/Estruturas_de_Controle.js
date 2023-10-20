@@ -67,3 +67,20 @@
 // console.log(`Até a próxima`);
 
 
+// /* - - - - - - - - - - - - do While - - - - - - - - - - - - */
+
+// function numeroEntre(min, max) {
+//     const valor = Math.random() * (max - min) + min;
+//     return Math.floor(valor);
+// }
+
+// let opcao = 0
+
+// do {
+//     opcao = numeroEntre(-1, 10);
+//     console.log(`Opção escolida foi ${opcao}.`);
+// } while (opcao != -1);
+
+// console.log(`Até a próxima`);
+
+
