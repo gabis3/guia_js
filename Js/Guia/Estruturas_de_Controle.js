@@ -84,3 +84,15 @@
 // console.log(`Até a próxima`);
 
 
+// /* - - - - - - - - - - - - For - - - - - - - - - - - - */
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`i = ${i}`);
+// }
+
+// const notas = [2, 4, 6, 5]
+// for (let j = 0; j < notas.length; j++) {
+//     console.log(`notas: ${notas[j]}`);
+// }
+
+
