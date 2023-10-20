@@ -96,3 +96,21 @@
 // }
 
 
+// /* - - - - - - - - - - - - For in - - - - - - - - - - - - */
+
+// const notas = [2, 4, 6.2, 6.4]
+// for (let i in notas) {
+//     console.log(i, notas[i]);
+// }
+
+// const pessoa = {
+//     nome: "Guto",
+//     sobrenome: "BB",
+//     idade: 20
+// }
+
+// for (let atributo in pessoa) {
+//     console.log(`${atributo} = ${pessoa[atributo]}`);
+// }
+
+
