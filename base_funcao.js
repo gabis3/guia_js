@@ -111,3 +111,32 @@
 
 // pessoa.falar();
 // pessoa.falar2();
+
+
+// /* - - - - - - - - - Função Callback - - - - - - - - - - */
+
+// const fabricantes = ["Mercedes", "Audi", "BMW"]
+
+// function imprimir(nome, indi) {
+//     console.log(`${indi + 1}. ${nome}`);
+// }
+
+// fabricantes.forEach(imprimir);
+// fabricantes.forEach(fabricante => console.log(fabricante))
+
+
+// const notas = [2.4, 4.7, 8.2, 6.7, 9.4]
+
+// //sem callback
+// const notasBaixas = []
+// for (let i in notas) {
+//     if (notas[i] < 7) {
+//         notasBaixas.push(notas[i])
+//     }
+// }
+// console.log(notasBaixas);
+
+// //com callback
+// const notasBaixas2 = notas.filter(notas => notas < 7)
+// console.log(notasBaixas2);
+
