@@ -46,4 +46,39 @@
 // new Pessoa;
 
 
-/* - - - - - - - - - Função Arrow - - - - - - - - - - */
+// /* - - - - - - - - - Função Arrow - - - - - - - - - - */
+
+// function Pessoa() {
+//     this.idade = 0;
+
+//     setInterval(() => {
+//         this.idade++;
+//         console.log(this.idade);
+//     }, 1000)
+// }
+// new Pessoa;
+
+
+// let compararComThis = function (param) {
+//     console.log(this === param);
+// }
+
+// compararComThis(global);
+// compararComThis(module.exports);
+// compararComThis(this);
+
+// const obj = {};
+// compararComThis = compararComThis.bind(obj);
+// compararComThis(global)
+// compararComThis(obj);
+// console.log("");
+
+// let compararComThisArrow = param => console.log(this === param);
+
+// compararComThisArrow(global);
+// compararComThisArrow(module.exports);
+
+// compararComThisArrow = compararComThisArrow.bind(obj);
+// compararComThisArrow(obj);
+
+
