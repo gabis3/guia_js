@@ -212,3 +212,44 @@
 
 // console.log(criarProduto("Celular", 1900));
 // console.log(criarProduto("Celular2", 1800));
+
+
+// /* - - - - - - - - - Class vs Função Factory - - - - - - - - - - */
+
+// class Pessoa {
+//   constructor(nome) {
+//     this.nome = nome
+//   }
+
+//   falar() {
+//     console.log(`Meu nome é ${this.nome}`);
+//   }
+// }
+
+// const p1 = new Pessoa("Augusto");
+// p1.falar();
+
+
+// const pessoa = nome => {
+//   return {
+//     falar: () => console.log(`Meu nome é ${nome}`)
+//     // function () {
+//     //     console.log(`Meu nome é ${nome}`)
+//     // }
+//   }
+// }
+
+// const p2 = pessoa("Gabi");
+// p2.falar();
+
+
+// function Pessoa2 (nome) {
+//   this.nome = nome;
+//   this.falar2 = function() {
+//     console.log(`Meu nome é ${this.nome}`);
+//   }
+// }
+
+// const p3 = new Pessoa2("Gabi");
+// p3.falar2();
+
