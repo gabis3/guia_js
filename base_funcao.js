@@ -261,3 +261,31 @@
 //   console.log("Será executado na hora");
 //   console.log("Foge do escopo mais abrangente!");
 // })()
+
+
+// /* - - - - - - - - - Call e Apply - - - - - - - - - - */
+
+// function getPreco(imposto = 0, moeda = "R$") {
+//   return `${moeda} ${this.preco * (1- this.desc) * (1 + imposto)}`
+// }
+
+// const produto = {
+//   nome: "Celular",
+//   preco: 1900,
+//   desc: 0.15,
+//   getPreco
+// }
+
+// global.preco = 20;
+// global.desc = 0.1
+// console.log(getPreco());
+// console.log(produto.getPreco(), "\n");
+
+
+// const carro = {preco: 2340, desc: 0.20}
+
+// console.log(getPreco.call(carro));
+// console.log(getPreco.apply(carro), "\n");
+
+// console.log(getPreco.call(carro, 0.17, "$"));
+// console.log(getPreco.apply(carro, [0.17, "$"]));
