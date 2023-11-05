@@ -187,3 +187,28 @@
 // }
 
 // exec();
+
+
+// /* - - - - - - - - - Função Factory - - - - - - - - - - */
+
+// //Factory Simples
+// function criarPessoa() {
+//   return {
+//     nome: "...",
+//     preco: 42
+//   }
+// }
+
+// console.log(criarPessoa());
+
+
+// function criarProduto(nome, preco) {
+//   return {
+//     nome,
+//     preco,
+//     desconto: 0.1
+//   }
+// }
+
+// console.log(criarProduto("Celular", 1900));
+// console.log(criarProduto("Celular2", 1800));
