@@ -138,6 +138,7 @@ function sistemaNotas(nota) {
 }
 
 console.log(sistemaNotas(38));
+console.log("");
 
 
 //exercicio 10
